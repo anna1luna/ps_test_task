@@ -58,6 +58,9 @@ button {
   font-weight: 700;
   margin-bottom: 20px;
 }
+.main-btn:hover {
+  background-color: #cdd3e1;
+}
 
 .server {
   background-color: white;
@@ -306,6 +309,9 @@ button {
   font-weight: 700;
   margin-bottom: 50px;
   margin-right: 20px;
+}
+.total-btn:hover {
+  background-color: #33abd9;
 }
 .total-price {
   display: flex;
