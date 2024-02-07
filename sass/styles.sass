@@ -1,0 +1,117 @@
+=font_small
+  font-weight: 700
+  font-size: 16px
+=select
+  background-color: white
+  border: 1px solid #DBE3E8
+  border-radius: 5px
+  height: 40px
+  margin-left: 20px
+
+body
+  font-family: 'Open Sans', sans-serif
+  background-color: #EDEFF4
+  margin: 0
+  box-sizing: border-box
+  list-style: none
+  text-decoration: none
+
+h1
+  margin: 0
+  font-size: 24px
+  margin-bottom: 30px
+
+.wrapper
+  display: flex
+  position: relative
+
+.sidebar
+  background-color: #22232B
+  width: 60px
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  position: fixed
+
+.main
+  margin-left: 150px
+  width: 100%
+  &-container
+    width: 93%
+  &-btn
+    width: 330px
+    height: 40px
+    background-color: #EDEFF4
+    border: 2px solid #5EBDE1
+    border-radius: 7px
+    font-size: 14px
+    font-weight: 700
+    margin-bottom: 20px
+
+.server
+  margin-top: 140px
+  background-color: white
+  border-radius: 15px
+  padding: 35px 40px
+  margin-bottom: 20px
+  &-container
+    display: grid
+    grid-template-columns: 33% 33% 33%
+  & select
+    +select
+    +font_small
+    margin-bottom: 10px
+    appearance: none
+    background-image: url('/img/arrow.png')
+    background-repeat: no-repeat
+    background-position: calc(100% - 15px) center
+    padding-right: 35px
+    padding-left: 15px
+  &-item
+    &-price
+      margin: 0 0 25px 60px
+      text-decoration: underline dotted #67c0e2 2.5px
+    +font_small
+    &-type
+      display: flex
+    &-label
+      position: relative
+      top: 9px
+      left: 75px
+      display: inline
+      background-color: white
+      font-size: 11px
+      color: #22232B
+    &-big
+      grid-column: span 2
+    &-select-big
+      width: 86.5%
+    &-img
+      width: 36px
+      height: 36px
+      &-small
+        width: 20px
+        height: 16px
+        position: relative
+        top: 12px
+        left: 74px
+  & a
+    grid-column: span 3
+    color: #20A8D8
+    font-size: 13px
+    margin-bottom: 10px
+  &-info
+    grid-column: span 3
+    color: #3E515B
+    font-size: 14px
+    margin-bottom: 20px
+  &-price
+    display: flex
+    align-items: baseline
+    &-big
+      font-size: 24px
+      font-weight: 700
+    &-small
+      font-size: 16px
+      margin-left: 5px
