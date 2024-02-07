@@ -13,6 +13,12 @@ h1 {
   margin-bottom: 30px;
 }
 
+h2 {
+  margin: 0;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
 .wrapper {
   display: flex;
   position: relative;
@@ -47,24 +53,22 @@ h1 {
 }
 
 .server {
-  margin-top: 140px;
   background-color: white;
   border-radius: 15px;
   padding: 35px 40px;
   margin-bottom: 20px;
+  margin-top: 140px;
 }
 .server-container {
   display: grid;
   grid-template-columns: 33% 33% 33%;
 }
-.server select {
+.server-item-select {
   background-color: white;
   border: 1px solid #DBE3E8;
   border-radius: 5px;
   height: 40px;
   margin-left: 20px;
-  font-weight: 700;
-  font-size: 16px;
   margin-bottom: 10px;
   appearance: none;
   background-image: url("/img/arrow.png");
@@ -72,6 +76,8 @@ h1 {
   background-position: calc(100% - 15px) center;
   padding-right: 35px;
   padding-left: 15px;
+  font-weight: 700;
+  font-size: 16px;
 }
 .server-item {
   font-weight: 700;
@@ -92,6 +98,7 @@ h1 {
   background-color: white;
   font-size: 11px;
   color: #22232B;
+  font-weight: 400;
 }
 .server-item-big {
   grid-column: span 2;
@@ -129,8 +136,83 @@ h1 {
 .server-price-big {
   font-size: 24px;
   font-weight: 700;
+  margin-right: 5px;
 }
-.server-price-small {
+.server-price-big-small {
   font-size: 16px;
-  margin-left: 5px;
+}
+
+.ip {
+  background-color: white;
+  border-radius: 15px;
+  padding: 35px 40px;
+  margin-bottom: 20px;
+}
+.ip-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+.ip-item-label {
+  position: relative;
+  top: 9px;
+  left: 75px;
+  display: inline;
+  background-color: white;
+  font-size: 11px;
+  color: #22232B;
+  font-weight: 400;
+}
+.ip-item-type {
+  display: flex;
+}
+.ip-item-select {
+  background-color: white;
+  border: 1px solid #DBE3E8;
+  border-radius: 5px;
+  height: 40px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  appearance: none;
+  background-image: url("/img/arrow.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) center;
+  padding-right: 35px;
+  padding-left: 15px;
+}
+.ip-item-img {
+  width: 36px;
+  height: 36px;
+}
+.ip-item-img-small {
+  width: 20px;
+  height: 16px;
+  position: relative;
+  top: 12px;
+  left: 74px;
+}
+.ip-info {
+  display: flex;
+}
+.ip-info-img {
+  width: 26px;
+  height: 36px;
+  margin-top: 20px;
+}
+.ip-info-text {
+  color: #3E515B;
+  font-size: 14px;
+  margin-left: 25px;
+}
+.ip-price {
+  display: flex;
+  align-items: baseline;
+  grid-column: span 3;
+}
+.ip-price-big {
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+.ip-price-big-small {
+  font-size: 16px;
 }/*# sourceMappingURL=styles.css.map */

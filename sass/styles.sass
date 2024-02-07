@@ -7,6 +7,50 @@
   border-radius: 5px
   height: 40px
   margin-left: 20px
+  margin-bottom: 10px
+  appearance: none
+  background-image: url('/img/arrow.png')
+  background-repeat: no-repeat
+  background-position: calc(100% - 15px) center
+  padding-right: 35px
+  padding-left: 15px
+=container
+  display: grid
+  grid-template-columns: 33% 33% 33%
+=label
+  position: relative
+  top: 9px
+  left: 75px
+  display: inline
+  background-color: white
+  font-size: 11px
+  color: #22232B
+  font-weight: 400
+=question
+  width: 20px
+  height: 16px
+  position: relative
+  top: 12px
+  left: 74px
+=type
+  display: flex
+=img
+  width: 36px
+  height: 36px
+=bkgrd_white
+  background-color: white
+  border-radius: 15px
+  padding: 35px 40px
+  margin-bottom: 20px
+=price
+  display: flex
+  align-items: baseline
+  &-big
+    font-size: 24px
+    font-weight: 700
+    margin-right: 5px
+    &-small
+      font-size: 16px
 
 body
   font-family: 'Open Sans', sans-serif
@@ -20,6 +64,11 @@ h1
   margin: 0
   font-size: 24px
   margin-bottom: 30px
+
+h2
+  margin: 0
+  font-size: 24px
+  margin-bottom: 20px
 
 .wrapper
   display: flex
@@ -50,52 +99,30 @@ h1
     margin-bottom: 20px
 
 .server
+  +bkgrd_white
   margin-top: 140px
-  background-color: white
-  border-radius: 15px
-  padding: 35px 40px
-  margin-bottom: 20px
   &-container
-    display: grid
-    grid-template-columns: 33% 33% 33%
-  & select
+    +container
+  &-item-select
     +select
     +font_small
-    margin-bottom: 10px
-    appearance: none
-    background-image: url('/img/arrow.png')
-    background-repeat: no-repeat
-    background-position: calc(100% - 15px) center
-    padding-right: 35px
-    padding-left: 15px
   &-item
     &-price
       margin: 0 0 25px 60px
       text-decoration: underline dotted #67c0e2 2.5px
     +font_small
     &-type
-      display: flex
+      +type
     &-label
-      position: relative
-      top: 9px
-      left: 75px
-      display: inline
-      background-color: white
-      font-size: 11px
-      color: #22232B
+      +label
     &-big
       grid-column: span 2
     &-select-big
       width: 86.5%
     &-img
-      width: 36px
-      height: 36px
+      +img
       &-small
-        width: 20px
-        height: 16px
-        position: relative
-        top: 12px
-        left: 74px
+        +question
   & a
     grid-column: span 3
     color: #20A8D8
@@ -107,11 +134,33 @@ h1
     font-size: 14px
     margin-bottom: 20px
   &-price
+    +price
+
+.ip
+  +bkgrd_white
+  &-container
+    +container
+  &-item
+    &-label
+      +label
+    &-type
+      +type
+    &-select
+      +select
+    &-img
+      +img
+      &-small
+        +question
+  &-info
     display: flex
-    align-items: baseline
-    &-big
-      font-size: 24px
-      font-weight: 700
-    &-small
-      font-size: 16px
-      margin-left: 5px
+    &-img
+      width: 26px
+      height: 36px
+      margin-top: 20px
+    &-text
+      color: #3E515B
+      font-size: 14px
+      margin-left: 25px
+  &-price
+    +price
+    grid-column: span 3

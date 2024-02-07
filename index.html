@@ -21,7 +21,7 @@
             <p class="server-item-label">  Процессор  </p>
           <div class="server-item-type">
             <img class="server-item-img"  src="/img/processor.png" alt="processor">
-            <select class="server-item-select-big" name="processor" id="1">
+            <select class="server-item-select server-item-select-big" name="processor" id="1">
               <option value="1">2 × Intel Xeon E5-2620 v3 2.40/3.20 Ггц (всего 12 ядер, 24 потока)</option>
               <option value="2">Не дано, но могло бы быть</option>
             </select> 
@@ -32,7 +32,7 @@
             <p class="server-item-label">  ОЗУ  </p>
           <div class="server-item-type">
             <img class="server-item-img"  src="/img/ozu.png" alt="ozu">
-            <select name="ozu" id="2">
+            <select class="server-item-select" name="ozu" id="2">
               <option value="1">32 Гб</option>
               <option value="2">Не дано, но могло бы быть</option>
             </select>
@@ -43,7 +43,7 @@
             <p class="server-item-label">  Системный диск 1  </p>
           <div class="server-item-type">
             <img class="server-item-img"  src="/img/disk.png" alt="disk1">
-            <select name="disk1" id="3">
+            <select class="server-item-select" name="disk1" id="3">
               <option value="1">SSD 120 Гб SATA</option>
               <option value="2">Не дано, но могло бы быть</option>
             </select>
@@ -54,7 +54,7 @@
             <p class="server-item-label">  Диск 2  </p>
           <div class="server-item-type">
             <img class="server-item-img" src="/img/disk.png" alt="disk2">
-            <select name="disk2" id="4">
+            <select class="server-item-select" name="disk2" id="4">
               <option value="1">Нет</option>
               <option value="2">Не дано, но могло бы быть</option>
             </select>
@@ -65,7 +65,7 @@
             <p class="server-item-label">  Диск 3  </p>
           <div class="server-item-type">
             <img class="server-item-img" src="/img/disk.png" alt="disk3">
-            <select name="disk3" id="5">
+            <select class="server-item-select" name="disk3" id="5">
               <option value="1">Нет</option>
               <option value="2">Не дано, но могло бы быть</option>
             </select>
@@ -77,7 +77,7 @@
             <p class="server-item-label">  Сетевой порт 1  </p>
           <div class="server-item-type">
             <img class="server-item-img" src="/img/port.png" alt="port1">
-            <select name="port1" id="6">
+            <select class="server-item-select" name="port1" id="6">
               <option value="1">1 Gbit/s</option>
               <option value="2">Не дано, но могло бы быть</option>
             </select> 
@@ -88,7 +88,7 @@
             <p class="server-item-label">  Сетевой порт 2  </p>
           <div class="server-item-type">
             <img class="server-item-img" src="/img/port.png" alt="port2">
-            <select name="port2" id="7">
+            <select class="server-item-select" name="port2" id="7">
               <option value="1">1 Gbit/s</option>
               <option value="2">Не дано, но могло бы быть</option>
             </select>
@@ -99,7 +99,7 @@
             <p class="server-item-label">  RAID 12Gbit/s   </p>
           <div class="server-item-type">
             <img class="server-item-img" src="/img/port.png" alt="raid">
-            <select name="raid" id="8">
+            <select class="server-item-select" name="raid" id="8">
               <option value="1">Нет</option>
               <option value="2">Не дано, но могло бы быть</option>
             </select>
@@ -111,7 +111,7 @@
             <img class="server-item-img-small" src="/img/question.png" alt="info">
           <div class="server-item-type">
             <img class="server-item-img" src="/img/port.png" alt="ipmi">
-            <select name="impi" id="9">
+            <select class="server-item-select" name="impi" id="9">
               <option value="1">Нет</option>
               <option value="2">Не дано, но могло бы быть</option>
             </select>
@@ -124,11 +124,36 @@
           <span class="server-price-small">тг/мес</span>
           </div>
           </div>
-
-          
         </div>
         <!-- End of server section -->
         <button class="main-btn">Добавить сервер</button>
+        <!-- End of btn section -->
+        <div class="ip">
+          <h2>Блок IP-адресов</h2>
+          <div class="ip-container">
+            <div class="ip-item">
+            <p class="ip-item-label">  Блок IP-адресов  </p>
+            <img class="ip-item-img-small" src="/img/question.png" alt="info">
+          <div class="ip-item-type">
+            <img class="ip-item-img" src="/img/ip.png" alt="ip">
+            <select class="ip-item-select" name="ip" id="10">
+              <option value="1">Блок из 4 IP-адресов (/30)</option>
+              <option value="2">Не дано, но могло бы быть</option>
+            </select>
+          </div>
+          </div>
+          <div class="ip-info">
+            <img class="ip-info-img" src="img/ipv6.png" alt="ipv6">
+            <p class="ip-info-text" >Мы поддерживаем IPv6 и можем предоставить блок IP-адресов /64 бесплатно. </p>
+          </div>
+          <div class="ip-price">
+            <span class="ip-price-big">4 000</span>
+          <span class="ip-price-small">тг/мес</span>
+          </div>
+          </div>
+        </div>
+         <!-- End of ip section -->
+
       </div>
     </div>
   </div>
