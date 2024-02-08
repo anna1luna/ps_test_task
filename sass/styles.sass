@@ -15,6 +15,7 @@
   padding-right: 35px
   padding-left: 15px
   cursor: pointer
+  font-weight: 700
 =container
   display: grid
   grid-template-columns: 33% 33% 33%
@@ -110,7 +111,8 @@ button
   +bkgrd_white
   margin-top: 140px
   &-container
-    +container
+    display: grid
+    grid-template-columns: 33% 33% 33%
   &-item-select
     +select
     +font_small
@@ -147,7 +149,8 @@ button
 .ip
   +bkgrd_white
   &-container
-    +container
+    display: grid
+    grid-template-columns: 33% 33% 33%
   &-item
     &-label
       +label
@@ -176,7 +179,8 @@ button
 .firewall
   +bkgrd_white
   &-container
-    +container
+    display: grid
+    grid-template-columns: 33% 33% 33%
   &-item
     &-label
       +label
@@ -248,3 +252,110 @@ button
     margin-left: 10px
     border: 1px solid #e9e9ed
     border-radius: 7px
+
+@media only screen and (min-width: 1200px)
+  .server
+    &-item
+      &-select
+        width: 200px
+        text-overflow: ellipsis
+        &-big
+          width: 500px
+  .ip
+    &-info
+      margin-left: 20px
+  .footer
+    &-ul
+      width: 93%
+
+@media only screen and (min-width: 992px)
+  .server
+    margin-left: -40px
+    &-item
+      grid-column: span 2
+      &-big
+        grid-column: span 3
+      &-select
+        width: 100%
+        &-big
+  .main
+    &-btn
+      margin-left: -40px
+  .ip
+    margin-left: -40px
+    &-item
+      grid-column: span 2
+      &-select
+        width: 80%
+
+  .firewall
+    margin-left: -40px
+    &-item
+      grid-column: span 2
+      &-select
+        width: 80%
+  .total
+    margin-left: -40px
+    &-info
+      max-width: 35%
+      text-align: center
+      margin-left: 15px
+
+  .footer
+    &-container
+      margin-left: -40px
+    &-ul
+      width: 90%
+
+@media only screen and (min-width: 768px)
+  body
+    overflow-x: hidden
+  .server
+    margin-left: -40px
+    &-item
+      grid-column: span 3
+      &-big
+        grid-column: span 3
+      &-select
+        text-overflow: ellipsis
+        width: 100%
+        &-big
+  .main
+    &-btn
+      margin-left: -40px
+  .ip
+    margin-left: -40px
+    &-item
+      grid-column: span 3
+      &-select
+        width: 100%
+    &-info
+      grid-column: span 3
+
+  .firewall
+    margin-left: -40px
+    &-item
+      grid-column: span 3
+      &-select
+        width: 100%
+  .total
+    margin-left: -40px
+    display: grid
+    grid-template-columns: 1fr 1fr
+    &-btn
+      margin-bottom: 20px
+    &-info
+      text-align: center
+      grid-column: span 2
+      margin-left: 100px
+      margin-bottom: 50px
+    &-price
+      justify-content: end
+
+  .footer
+    &-container
+      margin-left: -40px
+    &-ul
+      display: grid
+      grid-template-columns: 1fr 1fr
+      width: 100%

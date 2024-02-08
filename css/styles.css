@@ -88,6 +88,7 @@ button {
   padding-left: 15px;
   cursor: pointer;
   font-weight: 700;
+  font-weight: 700;
   font-size: 16px;
 }
 .server-item {
@@ -191,6 +192,7 @@ button {
   padding-right: 35px;
   padding-left: 15px;
   cursor: pointer;
+  font-weight: 700;
 }
 .ip-item-img {
   width: 36px;
@@ -268,6 +270,7 @@ button {
   padding-right: 35px;
   padding-left: 15px;
   cursor: pointer;
+  font-weight: 700;
 }
 .firewall-item-img {
   width: 36px;
@@ -372,4 +375,136 @@ button {
   margin-left: 10px;
   border: 1px solid #e9e9ed;
   border-radius: 7px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .server-item-select {
+    width: 200px;
+    text-overflow: ellipsis;
+  }
+  .server-item-select-big {
+    width: 500px;
+  }
+  .ip-info {
+    margin-left: 20px;
+  }
+  .footer-ul {
+    width: 93%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .server {
+    margin-left: -40px;
+  }
+  .server-item {
+    grid-column: span 2;
+  }
+  .server-item-big {
+    grid-column: span 3;
+  }
+  .server-item-select {
+    width: 100%;
+  }
+  .main-btn {
+    margin-left: -40px;
+  }
+  .ip {
+    margin-left: -40px;
+  }
+  .ip-item {
+    grid-column: span 2;
+  }
+  .ip-item-select {
+    width: 80%;
+  }
+  .firewall {
+    margin-left: -40px;
+  }
+  .firewall-item {
+    grid-column: span 2;
+  }
+  .firewall-item-select {
+    width: 80%;
+  }
+  .total {
+    margin-left: -40px;
+  }
+  .total-info {
+    max-width: 35%;
+    text-align: center;
+    margin-left: 15px;
+  }
+  .footer-container {
+    margin-left: -40px;
+  }
+  .footer-ul {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .server {
+    margin-left: -40px;
+  }
+  .server-item {
+    grid-column: span 3;
+  }
+  .server-item-big {
+    grid-column: span 3;
+  }
+  .server-item-select {
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+  .main-btn {
+    margin-left: -40px;
+  }
+  .ip {
+    margin-left: -40px;
+  }
+  .ip-item {
+    grid-column: span 3;
+  }
+  .ip-item-select {
+    width: 100%;
+  }
+  .ip-info {
+    grid-column: span 3;
+  }
+  .firewall {
+    margin-left: -40px;
+  }
+  .firewall-item {
+    grid-column: span 3;
+  }
+  .firewall-item-select {
+    width: 100%;
+  }
+  .total {
+    margin-left: -40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .total-btn {
+    margin-bottom: 20px;
+  }
+  .total-info {
+    text-align: center;
+    grid-column: span 2;
+    margin-left: 100px;
+    margin-bottom: 50px;
+  }
+  .total-price {
+    justify-content: end;
+  }
+  .footer-container {
+    margin-left: -40px;
+  }
+  .footer-ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */
