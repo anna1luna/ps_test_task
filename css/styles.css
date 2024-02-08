@@ -88,6 +88,7 @@ button {
   padding-left: 15px;
   cursor: pointer;
   font-weight: 700;
+  font-size: 16px;
   font-weight: 700;
   font-size: 16px;
 }
@@ -193,6 +194,7 @@ button {
   padding-left: 15px;
   cursor: pointer;
   font-weight: 700;
+  font-size: 16px;
 }
 .ip-item-img {
   width: 36px;
@@ -271,6 +273,7 @@ button {
   padding-left: 15px;
   cursor: pointer;
   font-weight: 700;
+  font-size: 16px;
 }
 .firewall-item-img {
   width: 36px;
@@ -353,12 +356,12 @@ button {
   margin-bottom: 40px;
 }
 .footer-ul {
+  width: 65%;
   display: flex;
   justify-content: space-between;
   list-style: none;
   padding: 0;
   font-size: 16px;
-  width: 60%;
   margin-bottom: 45px;
 }
 .footer-link {
@@ -377,22 +380,19 @@ button {
   border-radius: 7px;
 }
 
-@media only screen and (min-width: 1200px) {
-  .server-item-select {
-    width: 200px;
-    text-overflow: ellipsis;
-  }
-  .server-item-select-big {
-    width: 500px;
-  }
-  .ip-info {
-    margin-left: 20px;
-  }
-  .footer-ul {
-    width: 93%;
-  }
+.server-item-select {
+  width: 200px;
+  text-overflow: ellipsis;
 }
-@media only screen and (min-width: 992px) {
+.server-item-select-big {
+  width: 500px;
+}
+
+.ip-info {
+  margin-left: 55px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
   .server {
     margin-left: -40px;
   }
@@ -410,6 +410,9 @@ button {
   }
   .ip {
     margin-left: -40px;
+  }
+  .ip-info {
+    margin-left: 0;
   }
   .ip-item {
     grid-column: span 2;
@@ -441,7 +444,7 @@ button {
     width: 90%;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   body {
     overflow-x: hidden;
   }
@@ -472,6 +475,7 @@ button {
   }
   .ip-info {
     grid-column: span 3;
+    margin-left: 0;
   }
   .firewall {
     margin-left: -40px;
@@ -506,5 +510,189 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+  .server {
+    margin-left: -55px;
+    margin-top: 100px;
+  }
+  .server-item {
+    grid-column: span 3;
+  }
+  .server-item-big {
+    grid-column: span 3;
+  }
+  .server-item-select {
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+  .server-price {
+    grid-column: span 3;
+  }
+  .main-btn {
+    margin-left: -55px;
+  }
+  .ip {
+    margin-left: -55px;
+  }
+  .ip-item {
+    grid-column: span 3;
+  }
+  .ip-item-select {
+    width: 100%;
+  }
+  .ip-info {
+    grid-column: span 3;
+    margin-left: 0;
+  }
+  .firewall {
+    margin-left: -55px;
+  }
+  .firewall-item {
+    grid-column: span 3;
+  }
+  .firewall-item-select {
+    width: 100%;
+  }
+  .total {
+    margin-left: -40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .total-btn {
+    margin-bottom: 20px;
+    grid-column: span 2;
+  }
+  .total-info {
+    text-align: left;
+    grid-column: span 1;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    width: 90%;
+  }
+  .footer-container {
+    margin-left: -55px;
+  }
+  .footer-ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  h1, h2 {
+    font-size: 20px;
+  }
+  .sidebar {
+    width: 30px;
+  }
+  .sidebar-img {
+    width: 100%;
+  }
+  .server {
+    margin-left: -95px;
+    margin-top: 30px;
+    width: 100%;
+  }
+  .server-item {
+    grid-column: span 3;
+  }
+  .server-item-big {
+    grid-column: span 3;
+  }
+  .server-item-select {
+    text-overflow: ellipsis;
+    width: 100%;
+    font-size: 12px;
+  }
+  .server-price {
+    grid-column: span 3;
+  }
+  .main-btn {
+    margin-left: -95px;
+    width: 80%;
+  }
+  .ip {
+    margin-left: -95px;
+    width: 100%;
+  }
+  .ip-item {
+    grid-column: span 3;
+  }
+  .ip-item-select {
+    width: 100%;
+    text-overflow: ellipsis;
+    font-size: 12px;
+  }
+  .ip-info {
+    grid-column: span 3;
+    margin-left: 0;
+  }
+  .ip-info-text {
+    margin-left: 35px;
+  }
+  .firewall {
+    margin-left: -95px;
+    width: 100%;
+  }
+  .firewall-item {
+    grid-column: span 3;
+  }
+  .firewall-item-select {
+    width: 100%;
+    text-overflow: ellipsis;
+    font-size: 12px;
+  }
+  .total {
+    margin-left: -95px;
+    width: 130%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .total-btn {
+    margin-bottom: 20px;
+    grid-column: span 2;
+    width: 70%;
+  }
+  .total-price {
+    grid-column: span 2;
+  }
+  .total-info {
+    text-align: left;
+    grid-column: span 2;
+    margin-bottom: 50px;
+    width: 90%;
+    margin-left: 0;
+  }
+  .footer {
+    margin-left: -120px;
+  }
+  .footer-container {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-left: -65px;
+  }
+  .footer-copyright {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  .footer-ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .footer-btn {
+    width: 50px;
+    height: 50px;
   }
 }/*# sourceMappingURL=styles.css.map */
