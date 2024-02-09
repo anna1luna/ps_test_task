@@ -26,7 +26,6 @@ button {
 
 .wrapper {
   display: flex;
-  position: relative;
 }
 
 .sidebar {
