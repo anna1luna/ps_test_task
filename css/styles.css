@@ -1,10 +1,12 @@
-body {
+* {
   font-family: "Open Sans", sans-serif;
+}
+
+body {
   background-color: #EDEFF4;
   margin: 0;
   box-sizing: border-box;
   list-style: none;
-  text-decoration: none;
 }
 
 h1 {
@@ -73,62 +75,15 @@ button {
   display: grid;
   grid-template-columns: 33% 33% 33%;
 }
-.server-item {
-  font-weight: 700;
-  font-size: 16px;
-}
-.server-item-select {
-  background-color: white;
-  border: 1px solid #DBE3E8;
-  border-radius: 5px;
-  height: 40px;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  appearance: none;
-  background-image: url("/img/arrow.png");
-  background-repeat: no-repeat;
-  background-position: calc(100% - 15px) center;
-  padding-right: 35px;
-  padding-left: 15px;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  font-weight: 700;
-  font-size: 16px;
+.server-item-big {
+  grid-column: span 2;
 }
 .server-item-price {
   margin: 0 0 25px 60px;
   text-decoration: underline dotted #67c0e2 2.5px;
-}
-.server-item-type {
-  display: flex;
-}
-.server-item-label {
-  position: relative;
-  top: 9px;
-  left: 75px;
-  display: inline;
-  background-color: white;
-  font-size: 11px;
-  color: #22232B;
-  font-weight: 400;
-}
-.server-item-big {
-  grid-column: span 2;
-}
-.server-item-select-big {
-  width: 88%;
-}
-.server-item-img {
-  width: 36px;
-  height: 36px;
-}
-.server-item-img-small {
-  width: 20px;
-  height: 16px;
-  position: relative;
-  top: 12px;
-  left: 74px;
+  font-weight: 700;
+  font-weight: 700;
+  font-size: 16px;
 }
 .server a {
   grid-column: span 3;
@@ -164,48 +119,7 @@ button {
 }
 .ip-container {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-}
-.ip-item-label {
-  position: relative;
-  top: 9px;
-  left: 75px;
-  display: inline;
-  background-color: white;
-  font-size: 11px;
-  color: #22232B;
-  font-weight: 400;
-}
-.ip-item-type {
-  display: flex;
-}
-.ip-item-select {
-  background-color: white;
-  border: 1px solid #DBE3E8;
-  border-radius: 5px;
-  height: 40px;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  appearance: none;
-  background-image: url("/img/arrow.png");
-  background-repeat: no-repeat;
-  background-position: calc(100% - 15px) center;
-  padding-right: 35px;
-  padding-left: 15px;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-}
-.ip-item-img {
-  width: 36px;
-  height: 36px;
-}
-.ip-item-img-small {
-  width: 20px;
-  height: 16px;
-  position: relative;
-  top: 12px;
-  left: 74px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .ip-info {
   display: flex;
@@ -243,48 +157,7 @@ button {
 }
 .firewall-container {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-}
-.firewall-item-label {
-  position: relative;
-  top: 9px;
-  left: 75px;
-  display: inline;
-  background-color: white;
-  font-size: 11px;
-  color: #22232B;
-  font-weight: 400;
-}
-.firewall-item-type {
-  display: flex;
-}
-.firewall-item-select {
-  background-color: white;
-  border: 1px solid #DBE3E8;
-  border-radius: 5px;
-  height: 40px;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  appearance: none;
-  background-image: url("/img/arrow.png");
-  background-repeat: no-repeat;
-  background-position: calc(100% - 15px) center;
-  padding-right: 35px;
-  padding-left: 15px;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-}
-.firewall-item-img {
-  width: 36px;
-  height: 36px;
-}
-.firewall-item-img-small {
-  width: 20px;
-  height: 16px;
-  position: relative;
-  top: 12px;
-  left: 74px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .firewall-price {
   display: flex;
@@ -683,4 +556,38 @@ button {
     width: 50px;
     height: 50px;
   }
+}
+.test__form {
+  display: flex;
+  align-items: center;
+}
+.test__img {
+  width: 36px;
+  height: 36px;
+}
+.test__fieldset {
+  border: 1px solid #DBE3E8;
+  background-color: white;
+  border-radius: 5px;
+  padding-top: 0;
+  height: 40px;
+  margin-left: 20px;
+  width: 85%;
+  margin-bottom: 10px;
+}
+.test__legend {
+  padding: 0 8px 5px 8px;
+  font-size: 11px;
+}
+.test__select {
+  border: none;
+  appearance: none;
+  background-image: url("/img/arrow.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) center;
+  padding-right: 18%;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: white;
 }/*# sourceMappingURL=styles.css.map */

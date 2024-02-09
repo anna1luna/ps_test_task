@@ -1,25 +1,9 @@
 =font_small
   font-weight: 700
   font-size: 16px
-=select
-  background-color: white
-  border: 1px solid #DBE3E8
-  border-radius: 5px
-  height: 40px
-  margin-left: 20px
-  margin-bottom: 10px
-  appearance: none
-  background-image: url('/img/arrow.png')
-  background-repeat: no-repeat
-  background-position: calc(100% - 15px) center
-  padding-right: 35px
-  padding-left: 15px
-  cursor: pointer
-  font-weight: 700
-  font-size: 16px
 =container
   display: grid
-  grid-template-columns: 33% 33% 33%
+  grid-template-columns: 1fr 1fr 1fr
 =label
   position: relative
   top: 9px
@@ -32,9 +16,6 @@
 =question
   width: 20px
   height: 16px
-  position: relative
-  top: 12px
-  left: 74px
 =type
   display: flex
 =img
@@ -56,13 +37,14 @@
       margin-right: 5px
       font-size: 16px
 
-body
+*
   font-family: 'Open Sans', sans-serif
+
+body
   background-color: #EDEFF4
   margin: 0
   box-sizing: border-box
   list-style: none
-  text-decoration: none
 
 h1
   margin: 0
@@ -114,27 +96,14 @@ button
   &-container
     display: grid
     grid-template-columns: 33% 33% 33%
-
   &-item
-    &-select
-      +select
-      +font_small
+    &-big
+      grid-column: span 2
     &-price
       margin: 0 0 25px 60px
       text-decoration: underline dotted #67c0e2 2.5px
-    +font_small
-    &-type
-      +type
-    &-label
-      +label
-    &-big
-      grid-column: span 2
-    &-select-big
-      width: 88%
-    &-img
-      +img
-      &-small
-        +question
+      font-weight: 700
+      +font_small
   & a
     grid-column: span 3
     color: #20A8D8
@@ -152,17 +121,6 @@ button
   +bkgrd_white
   &-container
     +container
-  &-item
-    &-label
-      +label
-    &-type
-      +type
-    &-select
-      +select
-    &-img
-      +img
-      &-small
-        +question
   &-info
     display: flex
     &-img
@@ -181,17 +139,7 @@ button
   +bkgrd_white
   &-container
     +container
-  &-item
-    &-label
-      +label
-    &-type
-      +type
-    &-select
-      +select
-    &-img
-      +img
-      &-small
-        +question
+
   &-price
     +price
     grid-column: span 3
@@ -498,3 +446,34 @@ button
     &-btn
       width: 50px
       height: 50px
+
+.test
+  &__form
+    display: flex
+    align-items: center
+  &__img
+    width: 36px
+    height: 36px
+  &__fieldset
+    border: 1px solid #DBE3E8
+    background-color: white
+    border-radius: 5px
+    padding-top: 0
+    height: 40px
+    margin-left: 20px
+    width: 85%
+    margin-bottom: 10px
+  &__legend
+    padding: 0 8px 5px 8px
+    font-size: 11px
+  &__select
+    border: none
+    appearance: none
+    background-image: url('/img/arrow.png')
+    background-repeat: no-repeat
+    background-position: calc(100% - 15px) center
+    padding-right: 18%
+    cursor: pointer
+    font-weight: 700
+    font-size: 16px
+    background-color: white
