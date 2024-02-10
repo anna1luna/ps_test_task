@@ -17,17 +17,6 @@
   border-radius: 15px
   padding: 35px 40px
   margin-bottom: 20px
-=price
-  display: flex
-  align-items: baseline
-  &-big
-    font-size: 24px
-    font-weight: 700
-    margin-right: 5px
-    &-small
-      margin-right: 5px
-      font-size: 16px
-
 *
   font-family: 'Open Sans', sans-serif
 
@@ -39,120 +28,145 @@ body
 
 h1
   display: none
-h2
-  margin: 0
-  font-size: 24px
-  margin-bottom: 30px
-button
-  cursor: pointer
 
 .wrapper
   display: flex
 
 .sidebar
-  background-color: #22232B
   width: 60px
   height: 100%
-  display: flex
-  flex-direction: column
-  justify-content: center
   position: fixed
-  &-img
+  &__img
     position: absolute
     top: 0%
-.main
-  margin-left: 150px
-  width: 100%
-  &-container
-    width: 93%
-  &-btn
-    width: 330px
-    height: 40px
+
+.btn
+  width: 330px
+  height: 40px
+  font-size: 14px
+  font-weight: 700
+  cursor: pointer
+  &__m-sm
+    margin-bottom: 20px
+  &__m-m
+    margin-bottom: 50px
+    margin-right: 20px
+  &__btn-transparent
     background-color: #EDEFF4
     border: 2px solid #5EBDE1
     border-radius: 7px
-    font-size: 14px
-    font-weight: 700
-    margin-bottom: 20px
     &:hover
       background-color: darken(#EDEFF4, 10% )
-
-.server
-  +bkgrd_white
-  margin-top: 140px
-  &-container
-    display: grid
-    grid-template-columns: 33% 33% 33%
-  &-item
-    &-big
-      grid-column: span 2
-    &-price
-      margin: 0 0 25px 60px
-      text-decoration: underline dashed #67c0e2 1px
-      text-underline-offset: 3px
-      font-weight: 700
-      +font_small
-  & a
-    grid-column: span 3
-    color: #20A8D8
-    font-size: 13px
-    margin-bottom: 10px
-  &-info
-    grid-column: span 3
-    color: #3E515B
-    font-size: 14px
-    margin-bottom: 20px
-  &-price
-    +price
-
-.ip
-  +bkgrd_white
-  &-container
-    +container
-  &-info
-    display: flex
-    &-img
-      width: 26px
-      height: 36px
-      margin-top: 20px
-    &-text
-      color: #3E515B
-      font-size: 14px
-      margin-left: 25px
-  &-price
-    +price
-    grid-column: span 3
-
-.firewall
-  +bkgrd_white
-  &-container
-    +container
-
-  &-price
-    +price
-    grid-column: span 3
-
-.total
-  display: flex
-  &-btn
-    width: 330px
-    height: 40px
+  &__btn-color
     background-color: #5EBDE1
     border: 2px solid #5EBDE1
     color: white
     border-radius: 7px
-    font-size: 14px
-    font-weight: 700
-    margin-bottom: 50px
-    margin-right: 20px
     &:hover
       background-color: darken(#5EBDE1, 10% )
-  &-price
-    +price
-    &-text
+
+.main
+  margin-left: 150px
+  width: 100%
+  &__container
+    width: 93%
+
+.top
+  margin-top: 140px
+.block
+  +bkgrd_white
+  &__heading
+    margin: 0
+    font-size: 24px
+    margin-bottom: 22px
+  &__price
+    display: flex
+    align-items: baseline
+    grid-column: span 3
+    &-l
+      font-size: 24px
+      font-weight: 700
+      margin-right: 5px
+    &-s
       margin-right: 5px
       font-size: 16px
-  &-info
+  &__link
+    grid-column: span 3
+    color: #20A8D8
+    font-size: 13px
+    margin-bottom: 10px
+  &__info
+    color: #3E515B
+    font-size: 14px
+    margin-bottom: 20px
+    &-big
+      grid-column: span 3
+
+.item
+  display: grid
+  grid-template-columns: 33% 33% 33%
+  &__container
+    grid-column: span 1
+    &-big
+      grid-column: span 2
+  &__form
+    display: flex
+    align-items: center
+  &__img
+    width: 36px
+    height: 36px
+  &__fieldset
+    border: 1px solid #DBE3E8
+    background-color: white
+    border-radius: 5px
+    padding-top: 0
+    height: 40px
+    margin-left: 20px
+    width: 85%
+    margin-bottom: 10px
+  &__legend
+    padding: 0 8px 5px 8px
+    font-size: 11px
+  &__select
+    border: none
+    appearance: none
+    background-image: url('/img/arrow.png')
+    background-repeat: no-repeat
+    background-position: calc(100% - 15px) center
+    padding-right: 18%
+    cursor: pointer
+    font-weight: 700
+    font-size: 16px
+    background-color: white
+  &__price
+    margin: 0 0 25px 60px
+    text-decoration: underline dashed #67c0e2 1px
+    text-underline-offset: 3px
+    font-weight: 700
+    +font_small
+
+.info
+  display: flex
+  &__img
+    width: 26px
+    height: 36px
+    margin-top: 20px
+    &__text
+      color: #3E515B
+      font-size: 14px
+      margin-left: 25px
+
+.total
+  display: flex
+  &__price
+    &-s
+      margin-right: 5px
+      font-size: 16px
+    &-l
+      font-size: 24px
+      font-weight: 700
+      margin-right: 5px
+  &__info
     max-width: 400px
     color: #3E515B
     font-size: 13px
@@ -161,13 +175,13 @@ button
 .footer
   background-color: white
   margin-left: -90px
-  &-container
+  &__container
     padding: 80px 0 80px 90px
-  &-copyright
+  &__copyright
     color: #3E515B
     font-size: 18px
     margin-bottom: 40px
-  &-ul
+  &__list
     width: 65%
     display: flex
     justify-content: space-between
@@ -175,14 +189,13 @@ button
     padding: 0
     font-size: 16px
     margin-bottom: 45px
-  &-link
+  &__link
     color: #22232B
     text-decoration: none
-  &-social
-    display: flex
-    margin-left: -10px
-
-  &-btn
+.social
+  display: flex
+  margin-left: -10px
+  &__btn
     width: 60px
     height: 60px
     margin-left: 10px
@@ -244,7 +257,7 @@ button
         width: 100%
         &-big
   .main
-    &-btn
+    &__btn
       margin-left: -40px
   .ip
     margin-left: -40px
@@ -301,7 +314,7 @@ button
     &-price
       grid-column: span 3
   .main
-    &-btn
+    &__btn
       margin-left: -55px
   .ip
     margin-left: -55px
@@ -368,7 +381,7 @@ button
     &-price
       grid-column: span 3
   .main
-    &-btn
+    &__btn
       margin-left: -95px
       width: 80%
   .ip
@@ -435,33 +448,4 @@ button
       width: 50px
       height: 50px
 
-.test
-  &__form
-    display: flex
-    align-items: center
-  &__img
-    width: 36px
-    height: 36px
-  &__fieldset
-    border: 1px solid #DBE3E8
-    background-color: white
-    border-radius: 5px
-    padding-top: 0
-    height: 40px
-    margin-left: 20px
-    width: 85%
-    margin-bottom: 10px
-  &__legend
-    padding: 0 8px 5px 8px
-    font-size: 11px
-  &__select
-    border: none
-    appearance: none
-    background-image: url('/img/arrow.png')
-    background-repeat: no-repeat
-    background-position: calc(100% - 15px) center
-    padding-right: 18%
-    cursor: pointer
-    font-weight: 700
-    font-size: 16px
-    background-color: white
+.item

@@ -11,244 +11,247 @@
 </head>
 <body>
   <div class="wrapper">
-    <div class="sidebar"><img class="sidebar-img" src="/img/menu.png" alt="menu"></div>
+    <div class="sidebar"><img class="sidebar__img" src="/img/menu.png" alt="menu"></div>
     <div class="main">
-      <div class="main-container">
+      <div class="main__container">
         <h1>PS Cloud Services</h1> <!-- По правилам СЕО нельзя иметь несколько Н1, но и совсем без него тоже не очень хорошо, поэтому я его просто скрыла-->
-        <div class="server">
-          <h2>Сервер 1</h2>
-          <div class="server-container">
-            <div class="server-item-big test__container">
-                <form class="test__form" method="post">
-                  <img class="test__img"  src="/img/processor.png" alt="processor">
-                  <fieldset class="test__fieldset">
-                    <legend class="test__legend"> Процессор </legend>
-                      <select class="test__select" name="processor" id="1">
+        <div class="block top">
+          <h2 class="block_heading">Сервер 1</h2>
+          <div class="item">
+            <div class="item__container item__container-big">
+                <form class="item__form" method="post">
+                  <img class="item__img"  src="/img/processor.png" alt="processor">
+                  <fieldset class="item__fieldset">
+                    <legend class="item__legend"> Процессор </legend>
+                      <select class="item__select" name="processor" id="1">
                         <option value="1">2 × Intel Xeon E5-2620 v3 2.40/3.20 Ггц (всего 12 ядер, 24 потока)</option>
                         <option value="2">Не дано, но могло бы быть</option>
                       </select> 
                   </fieldset>
                 </form>
-                <p class="server-item-price">19 000 тг/мес</p>
+                <p class="item__price">19 000 тг/мес</p>
             </div>
-            <div class="test__container">
-                <form class="test__form" method="post">
-                  <img class="test__img"  src="/img/ozu.png" alt="ozu">
-                  <fieldset class="test__fieldset">
-                    <legend class="test__legend"> ОЗУ </legend>
-                      <select class="test__select" name="ozu" id="2">
+            <div class="item__container">
+                <form class="item__form" method="post">
+                  <img class="item__img"  src="/img/ozu.png" alt="ozu">
+                  <fieldset class="item__fieldset">
+                    <legend class="item__legend"> ОЗУ </legend>
+                      <select class="item__select" name="ozu" id="2">
                         <option value="1">32 Гб</option>
                         <option value="2">Не дано, но могло бы быть</option>
                       </select> 
                   </fieldset>
                 </form>
-                <p class="server-item-price">19 000 тг/мес</p>
+                <p class="item__price">19 000 тг/мес</p>
             </div>
-            <div class="test__container">
-                <form class="test__form" method="post">
-                  <img class="test__img"  src="/img/disk.png" alt="disk">
-                  <fieldset class="test__fieldset">
-                    <legend class="test__legend"> Системный диск 1 </legend>
-                      <select class="test__select" name="disk1" id="3">
+            <div class="item__container">
+                <form class="item__form" method="post">
+                  <img class="item__img"  src="/img/disk.png" alt="disk">
+                  <fieldset class="item__fieldset">
+                    <legend class="item__legend"> Системный диск 1 </legend>
+                      <select class="item__select" name="disk1" id="3">
                         <option value="1">SSD 120 Гб SATA</option>
                         <option value="2">Не дано, но могло бы быть</option>
                       </select> 
                   </fieldset>
                 </form>
-                <p class="server-item-price">19 000 тг/мес</p>
+                <p class="item__price">19 000 тг/мес</p>
             </div>
-          <div class="test__container">
-                <form class="test__form" method="post">
-                  <img class="test__img"  src="/img/disk.png" alt="disk2">
-                  <fieldset class="test__fieldset">
-                    <legend class="test__legend"> Диск 2 </legend>
-                      <select class="test__select" name="disk2" id="4">
+          <div class="item__container">
+                <form class="item__form" method="post">
+                  <img class="item__img"  src="/img/disk.png" alt="disk2">
+                  <fieldset class="item__fieldset">
+                    <legend class="item__legend"> Диск 2 </legend>
+                      <select class="item__select" name="disk2" id="4">
                         <option value="1">Нет</option>
                         <option value="2">Не дано, но могло бы быть</option>
                       </select> 
                   </fieldset>
                 </form>
-                <p class="server-item-price">0 тг/мес</p>
+                <p class="item__price">0 тг/мес</p>
             </div>
-            <div class="test__container">
-                <form class="test__form" method="post">
-                  <img class="test__img"  src="/img/disk.png" alt="disk3">
-                  <fieldset class="test__fieldset">
-                    <legend class="test__legend"> Диск 3 </legend>
-                      <select class="test__select" name="disk3" id="5">
+            <div class="item__container">
+                <form class="item__form" method="post">
+                  <img class="item__img"  src="/img/disk.png" alt="disk3">
+                  <fieldset class="item__fieldset">
+                    <legend class="item__legend"> Диск 3 </legend>
+                      <select class="item__select" name="disk3" id="5">
                         <option value="1">Нет</option>
                         <option value="2">Не дано, но могло бы быть</option>
                       </select> 
                   </fieldset>
                 </form>
-                <p class="server-item-price">0 тг/мес</p>
+                <p class="item__price">0 тг/мес</p>
             </div>
-          
-          <a href="#">Добавить еще дисков</a>
-          <div class="test__container">
-                <form class="test__form" method="post">
-                  <img class="test__img"  src="/img/port.png" alt="port1">
-                  <fieldset class="test__fieldset">
-                    <legend class="test__legend"> Сетевой порт 1 </legend>
-                      <select class="test__select" name="port1" id="6">
+          <a class="block__link" href="#">Добавить еще дисков</a>
+          <div class="item__container">
+                <form class="item__form" method="post">
+                  <img class="item__img"  src="/img/port.png" alt="port1">
+                  <fieldset class="item__fieldset">
+                    <legend class="item__legend"> Сетевой порт 1 </legend>
+                      <select class="item__select" name="port1" id="6">
                         <option value="1">1 Gbit/s</option>
                         <option value="2">Не дано, но могло бы быть</option>
                       </select> 
                   </fieldset>
                 </form>
-                <p class="server-item-price">19 000 тг/мес</p>
+                <p class="item__price">19 000 тг/мес</p>
             </div>
-          <div class="test__container">
-                <form class="test__form" method="post">
-                  <img class="test__img"  src="/img/port.png" alt="port2">
-                  <fieldset class="test__fieldset">
-                    <legend class="test__legend"> Сетевой порт 2 </legend>
-                      <select class="test__select" name="port2" id="7">
+          <div class="item__container">
+                <form class="item__form" method="post">
+                  <img class="item__img"  src="/img/port.png" alt="port2">
+                  <fieldset class="item__fieldset">
+                    <legend class="item__legend"> Сетевой порт 2 </legend>
+                      <select class="item__select" name="port2" id="7">
                         <option value="1">1 Gbit/s</option>
                         <option value="2">Не дано, но могло бы быть</option>
                       </select> 
                   </fieldset>
                 </form>
-                <p class="server-item-price">19 000 тг/мес</p>
+                <p class="item__price">19 000 тг/мес</p>
             </div>
-          <div class="test__container">
-                <form class="test__form" method="post">
-                  <img class="test__img"  src="/img/port.png" alt="raid">
-                  <fieldset class="test__fieldset">
-                    <legend class="test__legend"> RAID 12Gbit/s </legend>
-                      <select class="test__select" name="raid" id="8">
+          <div class="item__container">
+                <form class="item__form" method="post">
+                  <img class="item__img"  src="/img/port.png" alt="raid">
+                  <fieldset class="item__fieldset">
+                    <legend class="item__legend"> RAID 12Gbit/s </legend>
+                      <select class="item__select" name="raid" id="8">
                         <option value="1">Нет</option>
                         <option value="2">Не дано, но могло бы быть</option>
                       </select> 
                   </fieldset>
                 </form>
-                <p class="server-item-price">0 тг/мес</p>
+                <p class="item__price">0 тг/мес</p>
             </div>
-          <div class="test__container">
-                <form class="test__form" method="post">
-                  <img class="test__img"  src="/img/port.png" alt="ipmi">
-                  <fieldset class="test__fieldset">
-                    <legend class="test__legend"> IPMI 
-                      <img class="server-item-img-small" src="/img/question.png" alt="question">
+          <div class="item__container">
+                <form class="item__form" method="post">
+                  <img class="item__img"  src="/img/port.png" alt="ipmi">
+                  <fieldset class="item__fieldset">
+                    <legend class="item__legend"> IPMI 
+                      <img class="block-item-img-small" src="/img/question.png" alt="question">
                     </legend>
-                      <select class="test__select" name="ipmi" id="9">
+                      <select class="item__select" name="ipmi" id="9">
                         <option value="1">Нет</option>
                         <option value="2">Не дано, но могло бы быть</option>
                       </select> 
                   </fieldset>
                 </form>
-                <p class="server-item-price">0 тг/мес</p>
+                <p class="item__price">0 тг/мес</p>
             </div>
-          <span class="server-info">Все сервера комплектуются двумя блоками питания и подключаются к независимым линиям электроснабжения. </span>
-          <div class="server-price">
-            <span class="server-price-big">232 000</span>
-          <span class="server-price-small">тг/мес</span>
+          <span class="block__info block__info-big">Все сервера комплектуются двумя блоками питания и подключаются к независимым линиям электроснабжения. </span>
+          <div class="block__price">
+            <span class="block__price-l">232 000</span>
+          <span class="block__price-s">тг/мес</span>
           </div>
           </div>
         </div>
-        <!-- End of server section -->
-        <button class="main-btn">Добавить сервер</button>
+        <!-- End of block section -->
+        <button class="btn__btn-transparent btn btn__m-sm">Добавить сервер</button>
         <!-- End of btn section -->
-        <div class="ip">
-          <h2>Блок IP-адресов</h2>
-          <div class="ip-container">
-            <div class="test__container">
-                <form class="test__form" method="post">
-                  <img class="test__img"  src="/img/ip.png" alt="ip">
-                  <fieldset class="test__fieldset">
-                    <legend class="test__legend"> Блок IP-адресов 
-                      <img class="server-item-img-small" src="/img/question.png" alt="question">
+        <div class="block">
+          <h2 class="block__heading">Блок IP-адресов</h2>
+          <div class="item">
+            <div class="item__container">
+                <form class="item__form" method="post">
+                  <img class="item__img"  src="/img/ip.png" alt="ip">
+                  <fieldset class="item__fieldset">
+                    <legend class="item__legend"> Блок IP-адресов 
+                      <img class="block-item-img-small" src="/img/question.png" alt="question">
                     </legend>
-                      <select class="test__select" name="ip" id="10">
+                      <select class="item__select" name="ip" id="10">
                         <option value="1">Блок из 4 IP-адресов (/30)</option>
                         <option value="2">Не дано, но могло бы быть</option>
                       </select> 
                   </fieldset>
                 </form>
             </div>
-          <div class="ip-info">
-            <img class="ip-info-img" src="img/ipv6.png" alt="ipv6">
-            <p class="ip-info-text" >Мы поддерживаем IPv6 и можем предоставить блок IP-адресов /64 бесплатно. </p>
+          <div class="info">
+            <img class="info__img" src="img/ipv6.png" alt="ipv6">
+            <p class="info__text" >Мы поддерживаем IPv6 и можем предоставить блок IP-адресов /64 бесплатно. </p>
           </div>
-          <div class="ip-price">
-            <span class="ip-price-big">4 000</span>
-          <span class="ip-price-small">тг/мес</span>
+          <div class="block__price">
+            <span class="block__price-l">4 000</span>
+          <span class="block__price-s">тг/мес</span>
           </div>
           </div>
         </div>
          <!-- End of ip section -->
-        <div class="firewall">
-          <h2>Фаервол FortiGate</h2>
-          <div class="firewall-container">
-            <div class="test__container">
-                <form class="test__form" method="post">
-                  <img class="test__img"  src="/img/firewall.png" alt="firewall">
-                  <fieldset class="test__fieldset">
-                    <legend class="test__legend"> Выберите блок 
-                      <img class="server-item-img-small" src="/img/question.png" alt="question">
+
+        <div class="block">
+          <h2 class="block__heading">Фаервол FortiGate</h2>
+          <div class="item">
+            <div class="item__container">
+                <form class="item__form" method="post">
+                  <img class="item__img"  src="/img/firewall.png" alt="firewall">
+                  <fieldset class="item__fieldset">
+                    <legend class="item__legend"> Выберите блок 
+                      <img class="block-item-img-small" src="/img/question.png" alt="question">
                     </legend>
-                      <select class="test__select" name="firewall" id="11">
+                      <select class="item__select" name="firewall" id="11">
                         <option value="1">Не заказывать</option>
                         <option value="2">Не дано, но могло бы быть</option>
                       </select> 
                   </fieldset>
                 </form>
             </div>
-          <div class="firewall-price">
-            <span class="firewall-price-big">0</span>
-          <span class="firewall-price-small">тг/мес</span>
+          <div class="block__price">
+            <span class="block__price-l">0</span>
+          <span class="block__price-s">тг/мес</span>
           </div>
         </div>
       </div>
       <!-- End of firewall section -->
 
       <div class="total">
-        <button class="total-btn">Добавить в корзину</button>
-        <div class="total-price">
-          <span class="total-price-text">за</span>
-          <span class="total-price-big">415 000</span>
-          <span class="total-price-text">тг/мес</span>
+        <button class="btn__btn-color btn btn__m-m">Добавить в корзину</button>
+        <div class="total__price">
+          <span class="total__price-s">за</span>
+          <span class="total__price-l">415 000</span>
+          <span class="total__price-s">тг/мес</span>
           </div>
-          <p class="total-info">В стоимость входит подключение к сети Интернет на скорости до 100 Мбит/c, без ограничения объема трафика.</p>
+          <p class="total__info">В стоимость входит подключение к сети Интернет на скорости до 100 Мбит/c, без ограничения объема трафика.</p>
       </div>
      <!-- End of total section -->
      
     </div>
     <footer class="footer">
-      <div class="footer-container">
-        <p class="footer-copyright">© 2003–2023 ТОО «Интернет-компания PS»</p>
-        <nav class="footer-nav">
-          <ul class="footer-ul">
-            <li><a class="footer-link" href="#">Контакты</a></li>
-            <li><a class="footer-link" href="#">Правила использования</a> </li>
-            <li><a class="footer-link" href="#">Публичная оферта</a> </li>
-            <li><a class="footer-link" href="#">Политика конфиденциальности</a> </li>
+      <div class="footer__container">
+        <p class="footer__copyright">© 2003–2023 ТОО «Интернет-компания PS»</p>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li><a class="footer__link" href="#">Контакты</a></li>
+            <li><a class="footer__link" href="#">Правила использования</a> </li>
+            <li><a class="footer__link" href="#">Публичная оферта</a> </li>
+            <li><a class="footer__link" href="#">Политика конфиденциальности</a> </li>
           </ul>
         </nav>
-        <div class="footer-social">
-          <button class="footer-btn">
-            <img class="footer-btn-img" src="/img/fb.png" alt="facebook">
-            <a class="footer-btn-link" href="#"></a>
+        <div class="social">
+          <button class="social__btn">
+            <img class="social__img" src="/img/fb.png" alt="facebook">
+            <a class="social__link" href="#"></a>
         </button>
-        <button class="footer-btn">
-            <img class="footer-btn-img" src="/img/vk.png" alt="vkontakte">
-            <a class="footer-btn-link" href="#"></a>
+        <button class="social__btn">
+            <img class="social__img" src="/img/vk.png" alt="vkontakte">
+            <a class="social__link" href="#"></a>
         </button>
-        <button class="footer-btn">
-            <img  class="footer-btn-img" src="/img/twitter.png" alt="twitter">
-            <a class="footer-btn-link" href="#"></a>
+        <button class="social__btn">
+            <img  class="social__img" src="/img/twitter.png" alt="twitter">
+            <a class="social__link" href="#"></a>
         </button>
-        <button class="footer-btn">
-            <img class="footer-btn-img" src="/img/insta.png" alt="instagram">
-            <a class="footer-btn-link" href="#"></a>
+        <button class="social__btn">
+            <img class="social__img" src="/img/insta.png" alt="instagram">
+            <a class="social__link" href="#"></a>
         </button>
-        <button class="footer-btn">
-            <img class="footer-btn-img" src="/img/telegram.png" alt="telegram">
-            <a class="footer-btn-link" href="#"></a>
+        <button class="social__btn">
+            <img class="social__img" src="/img/telegram.png" alt="telegram">
+            <a class="social__link" href="#"></a>
         </button>
         </div>
+        <!-- End of social div-->
       </div>
+      <!-- End of footer container div-->
     </footer>
   </div>
+  <!-- End of main div-->
 </body>
 </html>
