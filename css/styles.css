@@ -17,6 +17,14 @@ h1 {
   display: flex;
 }
 
+.main {
+  margin-left: 154px;
+  width: 100%;
+}
+.main__container {
+  width: 93%;
+}
+
 .sidebar {
   width: 60px;
   height: 100%;
@@ -59,12 +67,19 @@ h1 {
   background-color: #33abd9;
 }
 
-.main {
-  margin-left: 150px;
-  width: 100%;
+.link {
+  color: #20A8D8;
+  font-size: 13px;
 }
-.main__container {
-  width: 93%;
+
+.info__text {
+  color: #3E515B;
+  font-size: 14px;
+}
+
+.heading {
+  margin-bottom: 22px;
+  margin-top: 0;
 }
 
 .top {
@@ -74,13 +89,14 @@ h1 {
 .block {
   background-color: white;
   border-radius: 15px;
-  padding: 35px 40px;
+  padding: 34px 40px;
   margin-bottom: 20px;
 }
 .block__heading {
   margin: 0;
   font-size: 24px;
   margin-bottom: 22px;
+  margin-top: 0;
 }
 .block__price {
   display: flex;
@@ -93,33 +109,28 @@ h1 {
   margin-right: 5px;
 }
 .block__price-s {
-  margin-right: 5px;
   font-size: 16px;
 }
 .block__link {
   grid-column: span 3;
-  color: #20A8D8;
-  font-size: 13px;
-  margin-bottom: 10px;
 }
 .block__info {
-  color: #3E515B;
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-.block__info-big {
   grid-column: span 3;
 }
 
 .item {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px 50px;
 }
 .item__container {
   grid-column: span 1;
 }
 .item__container-big {
   grid-column: span 2;
+}
+.item__container-mgn {
+  margin-right: 50px;
 }
 .item__form {
   display: flex;
@@ -136,11 +147,11 @@ h1 {
   padding-top: 0;
   height: 40px;
   margin-left: 20px;
-  width: 85%;
-  margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 5px;
 }
 .item__legend {
-  padding: 0 8px 5px 8px;
+  padding: 0 8px 0px 8px;
   font-size: 11px;
 }
 .item__select {
@@ -148,15 +159,16 @@ h1 {
   appearance: none;
   background-image: url("/img/arrow.png");
   background-repeat: no-repeat;
-  background-position: calc(100% - 15px) center;
+  background-position: calc(100% - 5px) center;
   padding-right: 18%;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   background-color: white;
+  width: 100%;
 }
 .item__price {
-  margin: 0 0 25px 60px;
+  margin: 0 0 0 60px;
   text-decoration: underline dashed #67c0e2 1px;
   text-underline-offset: 3px;
   font-weight: 700;
@@ -165,16 +177,18 @@ h1 {
 
 .info {
   display: flex;
+  align-items: center;
 }
 .info__img {
   width: 26px;
   height: 36px;
-  margin-top: 20px;
 }
-.info__img__text {
+.info__text {
+  margin-left: 25px;
   color: #3E515B;
   font-size: 14px;
-  margin-left: 25px;
+  text-align: left;
+  width: 70%;
 }
 
 .total {

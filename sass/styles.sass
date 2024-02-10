@@ -1,18 +1,19 @@
 *
   font-family: 'Open Sans', sans-serif
-
 body
   background-color: #EDEFF4
   margin: 0
   box-sizing: border-box
   list-style: none
-
 h1
   display: none
-
 .wrapper
   display: flex
-
+.main
+  margin-left: 154px
+  width: 100%
+  &__container
+    width: 93%
 .sidebar
   width: 60px
   height: 100%
@@ -46,23 +47,29 @@ h1
     &:hover
       background-color: darken(#5EBDE1, 10% )
 
-.main
-  margin-left: 150px
-  width: 100%
-  &__container
-    width: 93%
-
+.link
+  color: #20A8D8
+  font-size: 13px
+.info__text
+  color: #3E515B
+  font-size: 14px
+.heading
+  margin-bottom: 22px
+  margin-top: 0
 .top
   margin-top: 140px
+.fieldset
+
 .block
   background-color: white
   border-radius: 15px
-  padding: 35px 40px
+  padding: 34px 40px
   margin-bottom: 20px
   &__heading
     margin: 0
     font-size: 24px
     margin-bottom: 22px
+    margin-top: 0
   &__price
     display: flex
     align-items: baseline
@@ -72,27 +79,22 @@ h1
       font-weight: 700
       margin-right: 5px
     &-s
-      margin-right: 5px
       font-size: 16px
   &__link
     grid-column: span 3
-    color: #20A8D8
-    font-size: 13px
-    margin-bottom: 10px
   &__info
-    color: #3E515B
-    font-size: 14px
-    margin-bottom: 20px
-    &-big
-      grid-column: span 3
+    grid-column: span 3
 
 .item
   display: grid
-  grid-template-columns: 33% 33% 33%
+  grid-template-columns: 1fr 1fr 1fr
+  grid-gap: 20px 50px
   &__container
     grid-column: span 1
     &-big
       grid-column: span 2
+    &-mgn
+      margin-right: 50px
   &__form
     display: flex
     align-items: center
@@ -106,24 +108,26 @@ h1
     padding-top: 0
     height: 40px
     margin-left: 20px
-    width: 85%
-    margin-bottom: 10px
+    width: 100%
+    margin-bottom: 5px
   &__legend
-    padding: 0 8px 5px 8px
+    padding: 0 8px 0px 8px
     font-size: 11px
   &__select
     border: none
     appearance: none
     background-image: url('/img/arrow.png')
     background-repeat: no-repeat
-    background-position: calc(100% - 15px) center
+    background-position: calc(100% - 5px) center
     padding-right: 18%
     cursor: pointer
     font-weight: 700
     font-size: 16px
     background-color: white
+    width: 100%
+
   &__price
-    margin: 0 0 25px 60px
+    margin: 0 0 0 60px
     text-decoration: underline dashed #67c0e2 1px
     text-underline-offset: 3px
     font-weight: 700
@@ -131,14 +135,16 @@ h1
 
 .info
   display: flex
+  align-items: center
   &__img
     width: 26px
     height: 36px
-    margin-top: 20px
-    &__text
-      color: #3E515B
-      font-size: 14px
-      margin-left: 25px
+  &__text
+    margin-left: 25px
+    color: #3E515B
+    font-size: 14px
+    text-align: left
+    width: 70%
 
 .total
   display: flex
