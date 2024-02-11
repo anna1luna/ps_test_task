@@ -17,7 +17,7 @@ h1 {
   overflow-y: hidden;
   display: grid;
   grid-template-columns: 60px auto;
-  grid-gap: 90px;
+  grid-column-gap: 90px;
 }
 
 .main {
@@ -85,10 +85,7 @@ h1 {
   margin-bottom: 20px;
 }
 .block__heading {
-  margin: 0;
   font-size: 24px;
-  margin-bottom: 22px;
-  margin-top: 0;
 }
 .block__price {
   display: flex;
@@ -120,9 +117,6 @@ h1 {
 }
 .item__container-big {
   grid-column: span 2;
-}
-.item__container-mgn {
-  margin-right: 50px;
 }
 .item__form {
   display: grid;
