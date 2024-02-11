@@ -15,6 +15,7 @@ h1 {
 
 .wrapper {
   display: flex;
+  overflow-y: hidden;
 }
 
 .main {
@@ -42,12 +43,8 @@ h1 {
   font-weight: 700;
   cursor: pointer;
 }
-.btn__m-sm {
+.btn-solo {
   margin-bottom: 20px;
-}
-.btn__m-m {
-  margin-bottom: 50px;
-  margin-right: 20px;
 }
 .btn__btn-transparent {
   background-color: #EDEFF4;
@@ -182,17 +179,25 @@ h1 {
 .info__img {
   width: 26px;
   height: 36px;
+  margin-right: 25px;
 }
 .info__text {
-  margin-left: 25px;
   color: #3E515B;
   font-size: 14px;
   text-align: left;
   width: 70%;
+  margin: 0;
 }
 
 .total {
+  display: grid;
+  grid-template-columns: 32% 60%;
+  grid-gap: 45px;
+  margin-bottom: 50px;
+}
+.total__action {
   display: flex;
+  justify-content: space-between;
 }
 .total__price-s {
   margin-right: 5px;
@@ -207,15 +212,15 @@ h1 {
   max-width: 400px;
   color: #3E515B;
   font-size: 13px;
-  margin: 0 0 0 45px;
+  margin: 0;
 }
 
 .footer {
   background-color: white;
-  margin-left: -90px;
+  margin-left: -95px;
 }
 .footer__container {
-  padding: 80px 0 80px 90px;
+  padding: 80px 0 85px 95px;
 }
 .footer__copyright {
   color: #3E515B;
@@ -223,7 +228,7 @@ h1 {
   margin-bottom: 40px;
 }
 .footer__list {
-  width: 65%;
+  width: 42%;
   display: flex;
   justify-content: space-between;
   list-style: none;

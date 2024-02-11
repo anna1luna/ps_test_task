@@ -9,6 +9,7 @@ h1
   display: none
 .wrapper
   display: flex
+  overflow-y: hidden
 .main
   margin-left: 154px
   width: 100%
@@ -28,11 +29,8 @@ h1
   font-size: 14px
   font-weight: 700
   cursor: pointer
-  &__m-sm
+  &-solo
     margin-bottom: 20px
-  &__m-m
-    margin-bottom: 50px
-    margin-right: 20px
   &__btn-transparent
     background-color: #EDEFF4
     border: 2px solid #5EBDE1
@@ -139,15 +137,22 @@ h1
   &__img
     width: 26px
     height: 36px
+    margin-right: 25px
   &__text
-    margin-left: 25px
     color: #3E515B
     font-size: 14px
     text-align: left
     width: 70%
+    margin: 0
 
 .total
-  display: flex
+  display: grid
+  grid-template-columns: 32% 60%
+  grid-gap: 45px
+  margin-bottom: 50px
+  &__action
+    display: flex
+    justify-content: space-between
   &__price
     &-s
       margin-right: 5px
@@ -160,19 +165,19 @@ h1
     max-width: 400px
     color: #3E515B
     font-size: 13px
-    margin: 0 0 0 45px
+    margin: 0
 
 .footer
   background-color: white
-  margin-left: -90px
+  margin-left: -95px
   &__container
-    padding: 80px 0 80px 90px
+    padding: 80px 0 85px 95px
   &__copyright
     color: #3E515B
     font-size: 18px
     margin-bottom: 40px
   &__list
-    width: 65%
+    width: 42%
     display: flex
     justify-content: space-between
     list-style: none
