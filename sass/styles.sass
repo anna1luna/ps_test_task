@@ -8,15 +8,16 @@ body
 h1
   display: none
 .wrapper
-  display: flex
   overflow-y: hidden
+  display: grid
+  grid-template-columns: 60px auto
+  grid-gap: 90px
 .main
-  margin-left: 154px
-  width: 100%
-  &__container
-    width: 93%
+  grid-column: 2
+  padding-top: 140px
+  padding-right: 90px
+
 .sidebar
-  width: 60px
   height: 100%
   position: fixed
   &__img
@@ -54,8 +55,6 @@ h1
 .heading
   margin-bottom: 22px
   margin-top: 0
-.top
-  margin-top: 140px
 
 .block
   background-color: white
@@ -169,9 +168,9 @@ h1
 
 .footer
   background-color: white
-  margin-left: -95px
+  grid-column: span 2
   &__container
-    padding: 80px 0 85px 95px
+    padding: 80px 0 85px 150px
   &__copyright
     color: #3E515B
     font-size: 18px
