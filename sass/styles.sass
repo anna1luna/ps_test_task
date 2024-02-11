@@ -61,6 +61,10 @@ h1
   border-radius: 15px
   padding: 34px 40px
   margin-bottom: 20px
+  &__text
+    color: #3E515B
+    font-size: 14px
+    text-align: left
   &__heading
     font-size: 24px
   &__price
@@ -116,6 +120,7 @@ h1
     font-size: 16px
     background-color: white
     width: 100%
+    text-overflow: ellipsis
 
   &__price
     text-decoration: underline dashed #67c0e2 1px
@@ -126,18 +131,20 @@ h1
     margin: 0
 
 .info
-  display: flex
-  align-items: center
+  display: grid
+  grid-template-columns: 26px auto
+  grid-column-gap: 25px
   &__img
-    width: 26px
-    height: 36px
-    margin-right: 25px
+    display: flex
+    align-self: center
   &__text
     color: #3E515B
     font-size: 14px
     text-align: left
-    width: 70%
+    width: 75%
     margin: 0
+    display: flex
+    align-self: center
 
 .total
   display: grid
@@ -197,244 +204,153 @@ h1
       margin-left: 10px
       margin-top: 5px
 
-@media only screen and (min-width: 992px) and (max-width: 1240px)
-  .server
-    margin-left: -40px
-    &-item
-      grid-column: span 2
-      &-big
-        grid-column: span 3
-      &-select
-        width: 100%
-
-  .main
-    &-btn
-      margin-left: -40px
-  .ip
-    margin-left: -40px
-    &-info
-      margin-left: 0
-    &-item
-      grid-column: span 2
-      &-select
-        width: 80%
-
-  .firewall
-    margin-left: -40px
-    &-item
-      grid-column: span 2
-      &-select
-        width: 80%
+@media only screen and (min-width: 1240px) and (max-width: 1900px)
   .total
-    margin-left: -40px
-    &-info
-      max-width: 35%
-      text-align: center
-      margin-left: 15px
+    grid-template-columns: 45% 60%
+  .footer__list
+    width: 59%
 
+@media only screen and (min-width: 992px) and (max-width: 1239px)
+  .block
+    &__text
+      font-size: 12px
+  .item
+    &__legend
+      font-size: 9px
+    &__form
+      grid-template-columns: 25px auto
+    &__select
+      font-size: 14px
+    &__fieldset
+      padding-bottom: 5px
+  .info
+    grid-column: span 2
+    &__img
+      width: 25px
+      height: 33px
+    &__text
+      font-size: 12px
+  .total
+    grid-template-columns: 70% auto
+    &__info
+      font-size: 10px
   .footer
-    &-container
-      margin-left: -40px
-    &-ul
-      width: 90%
+    &__list
+      width: 89%
+    &__link
+      font-size: 15px
 
 @media only screen and (min-width: 768px) and (max-width: 991px)
-  body
+  .wrapper
     overflow-x: hidden
-  .server
-    margin-left: -40px
-    &-item
-      grid-column: span 3
-      &-big
-        grid-column: span 3
-      &-select
-        text-overflow: ellipsis
-        width: 100%
+    grid-column-gap: 45px
   .main
-    &__btn
-      margin-left: -40px
-  .ip
-    margin-left: -40px
-    &-item
+    padding-top: 100px
+  .item
+    &__container
       grid-column: span 3
-      &-select
-        width: 100%
-    &-info
-      grid-column: span 3
-      margin-left: 0
-
-  .firewall
-    margin-left: -40px
-    &-item
-      grid-column: span 3
-      &-select
-        width: 100%
+  .info
+    grid-column: span 3
   .total
-    margin-left: -40px
-    display: grid
-    grid-template-columns: 1fr 1fr
-    &-btn
-      margin-bottom: 20px
-    &-info
+    grid-template-columns: 1fr
+    grid-row-gap: 20px
+    &__info
+      max-width: 100%
       text-align: center
-      grid-column: span 2
-      margin-left: 100px
-      margin-bottom: 50px
-    &-price
-      justify-content: end
-
   .footer
-    &-container
-      margin-left: -40px
-    &-ul
-      display: grid
-      grid-template-columns: 1fr 1fr
-      width: 100%
+    &__container
+      padding-left: 115px
+      grid-row-gap: 20px
+    &__list
+      width: 86%
+      font-size: 12px
+    &__copyright
+      font-size: 15px
 
-@media only screen and (min-width: 600px) and (max-width: 767px)
-  body
-    overflow-x: hidden
-  .server
-    margin-left: -55px
-    margin-top: 100px
-    &-item
-      grid-column: span 3
-      &-big
-        grid-column: span 3
-      &-select
-        text-overflow: ellipsis
-        width: 100%
-    &-price
-      grid-column: span 3
+@media only screen and (min-width: 601px) and (max-width: 767px)
+  .wrapper
+    overflow: hidden
+    grid-column-gap: 45px
   .main
-    &__btn
-      margin-left: -55px
-  .ip
-    margin-left: -55px
-    &-item
+    padding-top: 100px
+    padding-right: 45px
+  .btn
+    width: 250px
+  .item
+    &__container
       grid-column: span 3
-      &-select
-        width: 100%
-    &-info
-      grid-column: span 3
-      margin-left: 0
-
-  .firewall
-    margin-left: -55px
-    &-item
-      grid-column: span 3
-      &-select
-        width: 100%
+  .info
+    grid-column: span 3
   .total
-    margin-left: -40px
-    display: grid
-    grid-template-columns: 1fr 1fr
-    &-btn
-      margin-bottom: 20px
-      grid-column: span 2
-
-    &-info
-      text-align: left
-      grid-column: span 1
-      margin-bottom: 50px
-      margin-left: 30px
-      width: 90%
-
+    grid-template-columns: 1fr
+    grid-row-gap: 20px
+    &__info
+      max-width: 100%
+      text-align: center
   .footer
-    &-container
-      margin-left: -55px
-    &-ul
-      display: grid
-      grid-template-columns: 1fr 1fr
+    &__container
+      padding-left: 115px
+      grid-row-gap: 20px
+    &__list
       width: 90%
       font-size: 14px
-
+      flex-direction: column
+    &__copyright
+      font-size: 15px
 @media only screen and (max-width: 600px)
-  body
-    overflow-x: hidden
-  h1, h2
-    font-size: 20px
+  .wrapper
+    overflow: hidden
+    grid-column-gap: 20px
+    grid-template-columns: 30px 1fr
   .sidebar
-    width: 30px
-    &-img
-      width: 100%
-  .server
-    margin-left: -95px
-    margin-top: 30px
-    width: 100%
-    &-item
-      grid-column: span 3
-      &-big
-        grid-column: span 3
-      &-select
-        text-overflow: ellipsis
-        width: 100%
-        font-size: 12px
-    &-price
-      grid-column: span 3
+    &__img
+      width: 30px
   .main
-    &__btn
-      margin-left: -95px
-      width: 80%
-  .ip
-    margin-left: -95px
-    width: 100%
-    &-item
-      grid-column: span 3
-      &-select
-        width: 100%
-        text-overflow: ellipsis
-        font-size: 12px
-
-    &-info
-      grid-column: span 3
-      margin-left: 0
-      &-text
-        margin-left: 35px
-
-  .firewall
-    margin-left: -95px
-    width: 100%
-    &-item
-      grid-column: span 3
-      &-select
-        width: 100%
-        text-overflow: ellipsis
-        font-size: 12px
-
-  .total
-    margin-left: -95px
-    width: 130%
-    display: grid
-    grid-template-columns: 1fr 1fr
-    &-btn
-      margin-bottom: 20px
-      grid-column: span 2
-      width: 70%
-    &-price
-      grid-column: span 2
-    &-info
-      text-align: left
-      grid-column: span 2
-      margin-bottom: 50px
-      width: 90%
-      margin-left: 0
-
-  .footer
-    margin-left: -120px
-    &-container
-      padding-top: 20px
-      padding-bottom: 30px
-      margin-left: -65px
-    &-copyright
-      font-size: 13px
-      margin-bottom: 20px
-    &-ul
-      display: grid
-      grid-template-columns: 1fr
-      width: 90%
+    padding-top: 50px
+    padding-right: 20px
+  .block
+    padding: 34px 20px
+    &__text
       font-size: 12px
-      margin-bottom: 20px
-    &-btn
+  .btn
+    width: 100%
+  .item
+    &__container
+      grid-column: span 3
+    &__select
+      font-size: 14px
+    &__form
+      grid-template-columns: 25px 1fr
+      grid-column-gap: 15px
+  .info
+    grid-template-columns: 25px 1fr
+    grid-column: span 3
+    &__text
+      width: 100%
+      font-size: 12px
+    &__img
+      width: 25px
+  .total
+    grid-template-columns: 1fr
+    grid-row-gap: 20px
+    &__action
+      flex-direction: column
+      align-items: center
+    &__info
+      max-width: 100%
+      text-align: center
+      font-size: 12px
+  .footer
+    &__container
+      padding-left: 50px
+      grid-row-gap: 20px
+    &__list
+      width: 90%
+      font-size: 14px
+      flex-direction: column
+    &__copyright
+      font-size: 13px
+  .social
+    &__btn
       width: 50px
       height: 50px
